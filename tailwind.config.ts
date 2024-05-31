@@ -1,20 +1,32 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        primary: {
+          light: '#6C63FF',
+          DEFAULT: '#4A47A3',
+          dark: '#00101e',
+        },
+        mode: {
+          dark: '#d4d4d4',
+        },
+        offWhite: '#e3dbdb',
+      },
+      fontFamily: {
+        robotoMono: ['var(--font-roboto_mono)'],
+        robotoMonoItalic: ['var(--font-roboto_mono_light_italic)'],
+        roboto: ['var(--font-roboto)'],
+        architectsDaughter: ['var(--font-architects_daughter)'],
       },
     },
   },
   plugins: [],
-};
-export default config;
+}
+export default config

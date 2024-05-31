@@ -1,0 +1,16 @@
+.animatedPhrase {
+  transform: translateY(100px);
+  opacity: 0;
+  animation: riseUp 2s forwards;
+}
+
+@keyframes riseUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,27 @@
+.pixel span {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: 0;
+  border-radius: 50%;
+  animation: pixels-animation linear infinite,
+    pulse-animation 5s ease-in-out infinite;
+}
+
+@keyframes pixels-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(var(--x-pixels), var(--y-pixels));
+  }
+}
+
+@keyframes pulse-animation {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
