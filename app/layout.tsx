@@ -28,8 +28,8 @@ const architectsDaughter = Architects_Daughter({
 })
 
 export const metadata: Metadata = {
-  title: 'Portifolio',
-  description: 'Portifolio developed fullstack',
+  title: 'Portfolio',
+  description: 'Portfolio of a full stack developer',
 }
 
 export default function RootLayout({
