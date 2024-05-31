@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 
 const Header = () => {
   useEffect(() => {
-    const handleSmoothScroll = (e) => {
+    const handleSmoothScroll = (e: any) => {
       const targetId = e.target.getAttribute('href').substring(1)
       const targetElement = document.getElementById(targetId)
       if (targetElement) {
