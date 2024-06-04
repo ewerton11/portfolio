@@ -29,7 +29,7 @@ const Header = () => {
     <header className="w-full h-20 sticky top-0 z-50 flex">
       <div className="relative w-full h-full">
         <div className="absolute left-[10%] h-full flex justify-center items-center">
-          <h1 className="text-2xl sm:text-5xl text-text-offWhite font-robotoMono font-bold">
+          <h1 className="text-2xl sm:text-5xl text-text-offWhite font-robotoMono font-bold mix-blend-difference">
             <Link href="#start">er.</Link>
           </h1>
         </div>

@@ -1,17 +1,23 @@
 import React from 'react'
 
 interface GithubProps {
+  width?: number
+  height?: number
   color?: string
 }
 
-const Github: React.FC<GithubProps> = ({ color = '#000000' }) => {
+const Github: React.FC<GithubProps> = ({
+  width = 26,
+  height = 26,
+  color = '#000000',
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
-      width="26"
-      height="26"
+      width={width}
+      height={height}
       viewBox="0 0 30 30"
     >
       <path

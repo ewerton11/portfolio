@@ -8,19 +8,19 @@ const Contact = () => {
       id="contact"
     >
       <div className="w-[80%] h-full flex items-center">
-        <div className="w-full h-2/3 border rounded-3xl flex flex-col justify-center items-center">
+        <div className="w-full h-2/5 sm:h-2/3 border rounded-3xl flex flex-col justify-center items-center">
           <div className="w-[80%] h-[80%] flex flex-col">
             <div className="w-full h-5/6 flex flex-col border-b font-robotoMono">
-              <h1 className="text-5xl font-normal">
+              <h1 className="text-2xl sm:text-5xl font-normal">
                 Vamos criar <br />
                 algo incrível <br /> juntos.
               </h1>
               <div className="flex-1 flex justify-end items-center">
-                <div className="w-24 mr-5">
+                <div className="w-20 sm:w-24 mr-5">
                   <ArrowRightIcon />
                 </div>
                 <Link
-                  className="text-xl"
+                  className="text-sm sm:text-xl"
                   href="mailto:ewertonreisc01@gmail.com"
                 >
                   ENVIE-ME UM EMAIL
@@ -28,8 +28,8 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex-1">
-              <ul className="flex h-full items-center font-semibold font-roboto">
-                <li className="">
+              <ul className="flex h-full items-center text-sm font-medium sm:font-semibold font-roboto">
+                <li className="p-2">
                   <Link
                     href="https://www.linkedin.com/in/ewerton11"
                     target="_blank"
@@ -38,7 +38,7 @@ const Contact = () => {
                     LinkedIn
                   </Link>
                 </li>
-                <li className="ml-5">
+                <li className="ml-5 p-2">
                   <Link
                     href="https://github.com/ewerton11"
                     target="_blank"

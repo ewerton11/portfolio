@@ -5,40 +5,41 @@ const projectsData: IProject[] = [
     title: 'FUT-433',
     imageSrc: '/fantasy.jpg',
     year: 'Atual',
-    description:
-      'Este site de fantasy football é o lugar perfeito para você e seus amigos montarem seus times e competirem para ver quem soma mais pontos. Crie ligas, escolha seus jogadores favoritos e acompanhe a performance de cada um ao longo da temporada. Com uma interface amigável e atualizações em tempo real, você pode desafiar seus amigos e se divertir competindo para descobrir quem é o melhor manager de futebol. Ideal para momentos de diversão e, quem sabe, até para apostas entre amigos.',
-    overview:
-      'Parte do desenvolvimento principal deste site de busca de tênis. Identificar melhorias e refatorar o código com melhores práticas, utilizando TypeScript. Implementação de scraping de dados e exibição dinâmica de produtos.',
-    skills: [
-      'Manipulação da DOM',
-      'Programação Orientada a Objetos (POO)',
-      'Gerenciamento de containers Docker',
-    ],
+    description: `Oferecer uma plataforma de gerenciamento de times de fantasy football, 
+    onde os usuários podem selecionar jogadores, criar ligas, acompanhar estatísticas em tempo real 
+    e competir com outros usuários.`,
+    overview: ` SaaS desenvolvido com boas práticas de desenvolvimento, utilizando TDD, DDD, .NET 
+    com Clean Architecture e o padrão de Injeção de Dependência.`,
+    skills: ['DDD', 'Clean Architecture', 'TDD', 'IoC'],
     technologies: [
+      '.Net Core',
+      'Asp.Net Core',
+      'EF Core',
+      'SQLServer',
+      'xUnit ',
       'NextJs',
       'TypeScript',
-      'Eslint',
-      'Styled Components',
+      'TailwindCSS',
+      'Zod',
+      'React-hook-form',
+      'React-slick',
+      'Slick-carousel',
       'Axios',
-      'ChartJs',
-      'React ChartJs 2',
-      'NodeJs',
-      'Express',
-      'MySql 2',
-      'Puppeteer',
-      'Docker',
     ],
     showcaseImage: '/select-team.png',
     githubLink: 'https://github.com/ewerton11/sneakerhead-web',
   },
   {
-    title: 'SNEAKERHEAD-WEB',
+    title: 'SNEAKER-HEAD',
     imageSrc: '/sneaker.jpg',
     year: '2023',
-    description:
-      'Este site facilita a busca pelos tênis ideais, realizando busca em diferentes sites como Nike e Adidas. Com soluções inteligentes, você encontra tênis de diversos estilos, preços e descontos, além de acessar um histórico de preços detalhado. Outros sites podem ser adicionados para expandir suas opções de busca.',
-    overview:
-      'Parte do desenvolvimento principal deste site de busca de tênis. Identificar melhorias e refatorar o código com melhores práticas, utilizando TypeScript. Implementação de scraping de dados e exibição dinâmica de produtos.',
+    description: `Este site facilita a busca pelos tênis ideais, realizando busca em diferentes sites como 
+      Nike e Adidas. Com soluções inteligentes, você encontra tênis de diversos estilos, 
+      preços e descontos, além de acessar um histórico de preços detalhado. Outros sites podem ser 
+      adicionados para expandir suas opções de busca.`,
+    overview: `Parte do desenvolvimento principal deste site de busca de tênis. Identificar melhorias e refatorar
+       o código com melhores práticas, utilizando TypeScript. Implementação de scraping de dados e 
+       exibição dinâmica de produtos.`,
     skills: [
       'Manipulação da DOM',
       'Programação Orientada a Objetos (POO)',
@@ -62,32 +63,15 @@ const projectsData: IProject[] = [
     githubLink: 'https://github.com/ewerton11/sneakerhead-web',
   },
   {
-    title: 'BEST MOMENTS SOCCER',
+    title: 'MOMENTS-SOCCER',
     imageSrc: '/estadio-de-futebol.jpg',
     year: '2023',
-    description:
-      'Este site facilita a busca pelos tênis ideais, realizando busca em diferentes sites como Nike e Adidas. Com soluções inteligentes, você encontra tênis de diversos estilos, preços e descontos, além de acessar um histórico de preços detalhado. Outros sites podem ser adicionados para expandir suas opções de busca.',
+    description: `Site para ver o resultados dos ultimos jogos dos jogos brasileiro e ver os melhores momentos
+      de toda rodada`,
     overview:
-      'Parte do desenvolvimento principal deste site de busca de tênis. Identificar melhorias e refatorar o código com melhores práticas, utilizando TypeScript. Implementação de scraping de dados e exibição dinâmica de produtos.',
-    skills: [
-      'Manipulação da DOM',
-      'Programação Orientada a Objetos (POO)',
-      'Gerenciamento de containers Docker',
-    ],
-    technologies: [
-      'NextJs',
-      'TypeScript',
-      'Eslint',
-      'Styled Components',
-      'Axios',
-      'ChartJs',
-      'React ChartJs 2',
-      'NodeJs',
-      'Express',
-      'MySql 2',
-      'Puppeteer',
-      'Docker',
-    ],
+      'Site desenvolvido com intuido de treinamento e evoluido com o passar do tempo',
+    skills: ['Gerenciamento de API externa'],
+    technologies: ['ReactJs', 'TypeScript', 'Vite', 'Styled-Components'],
     showcaseImage: '/best-moments-soccer.png',
     githubLink: 'https://github.com/ewerton11/sneakerhead-web',
   },

@@ -3,8 +3,19 @@ import Image from 'next/image'
 const About = () => {
   return (
     <div className="w-full h-screen flex justify-center" id="about">
-      <div className="w-[80%] h-full flex flex-col justify-center relative my-32">
-        <div className="w-full h-full flex flex-col justify-center text-xl font-robotoMono">
+      <div className="w-[80%] h-full flex flex-col justify-center relative">
+        <div className="w-full h-full flex flex-col lg:justify-center text-sm lg:text-xl font-robotoMono">
+          <div className="lg:hidden w-full flex justify-center">
+            <div className="m-7 bg-white rounded-full flex justify-center item-center">
+              <Image
+                src="/MyProfile.png"
+                width={128}
+                height={128}
+                alt="profile"
+                className="rounded-full w-32 h-32 object-cover"
+              />
+            </div>
+          </div>
           <h1 className="text-offWhite">(SOBRE)</h1>
           <div className="w-full h-auto flex items-center mt-3">
             <p className="flex-1">
@@ -21,12 +32,12 @@ const About = () => {
               Meu objetivo é criar minha própria startup, combinando minha
               paixão por tecnologia com meu espírito empreendedor.
             </p>
-            <div className="w-auto">
+            <div className="hidden lg:block lg:w-auto">
               <div className="bg-white rounded-full flex justify-center item-center">
                 <Image
                   src="/MyProfile.png"
-                  width={512}
-                  height={512}
+                  width={256}
+                  height={256}
                   alt="profile"
                   className="rounded-full w-64 h-64 object-cover"
                 />

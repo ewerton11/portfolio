@@ -6,11 +6,13 @@ const Start = () => {
       <div className="w-[80%] h-full relative">
         <div className="w-full h-1/2 flex justify-end">
           <div
-            className="w-72 h-full flex flex-col justify-center text-sm sm:text-base font-robotoMono
+            className="w-full sm:w-72 h-full flex flex-col justify-center text-sm sm:text-base font-robotoMono
           text-offWhite"
           >
-            <p className="text-end">BEM-VINDO AO MEU PORTFÓLIO!</p>
-            <p className="text-start">
+            <p className="text-center sm:text-end">
+              BEM-VINDO AO MEU PORTFÓLIO!
+            </p>
+            <p className="text-center sm:text-start">
               AQUI VOCÊ PODE ENCONTRAR OS PROJETOS MAIS RECENTES EM QUE TENHO
               TRABALHADO.
             </p>
