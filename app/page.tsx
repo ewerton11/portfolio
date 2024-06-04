@@ -47,12 +47,12 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="w-full relative bg-primary-dark">
-      {/* main-content */}
+    <div className="w-full relative bg-primary-dark main-content">
+      {/*  */}
       <Header />
       <div
-        className={` w-full h-auto flex flex-col relative overflow-hidden`}
-        // ref={pixelContainerRef} ${pixels.pixel}
+        className={`${pixels.pixel} w-full h-auto flex flex-col relative overflow-hidden`}
+        ref={pixelContainerRef}
       >
         <Start />
         <Projects />
