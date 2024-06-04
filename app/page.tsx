@@ -6,7 +6,7 @@ import pixels from '@/styles/pixels.module.css'
 import About from '@/components/about'
 import Contact from '@/components/contact'
 import Start from '@/components/start'
-import Projects from '@/components/projects'
+import Projects from '@/components/Projects'
 
 export default function Home() {
   const pixelContainerRef = useRef<HTMLDivElement | null>(null)
@@ -47,11 +47,12 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="w-full relative bg-primary-dark main-content">
+    <div className="w-full relative bg-primary-dark">
+      {/* main-content */}
       <Header />
       <div
-        className={`${pixels.pixel} w-full h-auto flex flex-col relative overflow-hidden`}
-        ref={pixelContainerRef}
+        className={` w-full h-auto flex flex-col relative overflow-hidden`}
+        // ref={pixelContainerRef} ${pixels.pixel}
       >
         <Start />
         <Projects />

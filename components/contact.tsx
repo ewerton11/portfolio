@@ -3,7 +3,10 @@ import Link from 'next/link'
 
 const Contact = () => {
   return (
-    <div className="w-full h-screen flex justify-center" id="contact">
+    <div
+      className="flex flex-col items-center min-h-screen h-screen"
+      id="contact"
+    >
       <div className="w-[80%] h-full flex items-center">
         <div className="w-full h-2/3 border rounded-3xl flex flex-col justify-center items-center">
           <div className="w-[80%] h-[80%] flex flex-col">
@@ -30,12 +33,17 @@ const Contact = () => {
                   <Link
                     href="https://www.linkedin.com/in/ewerton11"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     LinkedIn
                   </Link>
                 </li>
                 <li className="ml-5">
-                  <Link href="https://github.com/ewerton11" target="_blank">
+                  <Link
+                    href="https://github.com/ewerton11"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     GitHub
                   </Link>
                 </li>

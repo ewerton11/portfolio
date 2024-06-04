@@ -6,7 +6,7 @@ const Start = () => {
       <div className="w-[80%] h-full relative">
         <div className="w-full h-1/2 flex justify-end">
           <div
-            className="w-72 h-full flex flex-col justify-center text-base font-robotoMono
+            className="w-72 h-full flex flex-col justify-center text-sm sm:text-base font-robotoMono
           text-offWhite"
           >
             <p className="text-end">BEM-VINDO AO MEU PORTFÓLIO!</p>
@@ -18,11 +18,13 @@ const Start = () => {
         </div>
         <div className="w-full h-1/2">
           <div className="w-full h-auto flex flex-col">
-            <div className={`w-full ${start.animatedPhrase}`}>
-              <p className="text-5xl text-offWhite font-architectsDaughter py-5">
+            <div
+              className={`w-full ${start.animatedPhrase} text-3xl sm:text-5xl`}
+            >
+              <p className="text-offWhite font-architectsDaughter py-5">
                 EWERTON REIS
               </p>
-              <p className="text-5xl font-medium font-robotoMono py-5 pl-16">
+              <p className="font-medium font-robotoMono py-5 pl-16">
                 DESENVOLVEDOR FULL-STACK
               </p>
             </div>

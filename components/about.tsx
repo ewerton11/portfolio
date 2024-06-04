@@ -3,7 +3,7 @@ import Image from 'next/image'
 const About = () => {
   return (
     <div className="w-full h-screen flex justify-center" id="about">
-      <div className="w-[80%] h-full flex flex-col justify-center relative">
+      <div className="w-[80%] h-full flex flex-col justify-center relative my-32">
         <div className="w-full h-full flex flex-col justify-center text-xl font-robotoMono">
           <h1 className="text-offWhite">(SOBRE)</h1>
           <div className="w-full h-auto flex items-center mt-3">
