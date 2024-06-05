@@ -25,7 +25,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             </p>
           </div>
           <div className="w-full mt-7 flex justify-between font-robotoMono text-sm lg:text-xl">
-            <p className="w-3/4 lg:w-auto">Desenvolvedor Full-Stack</p>
+            <p className="w-3/4 lg:w-auto">{project.experience}</p>
             <p className="">{project.year}</p>
           </div>
         </div>

@@ -4,6 +4,7 @@ const projectsData: IProject[] = [
   {
     title: 'FUT-433',
     imageSrc: '/fantasy.jpg',
+    experience: 'Desenvolvedor Full-Stack',
     year: 'Atual',
     description: `Oferecer uma plataforma de gerenciamento de times de fantasy football, 
     onde os usuários podem selecionar jogadores, criar ligas, acompanhar estatísticas em tempo real 
@@ -26,12 +27,13 @@ const projectsData: IProject[] = [
       'Slick-carousel',
       'Axios',
     ],
-    showcaseImage: '/selectTeam.png',
+    showcaseImage: '/select-team.png',
     githubLink: 'https://github.com/ewerton11/sneakerhead-web',
   },
   {
     title: 'SNEAKER-HEAD',
     imageSrc: '/sneaker.jpg',
+    experience: 'Desenvolvedor Full-Stack',
     year: '2023',
     description: `Este site facilita a busca pelos tênis ideais, realizando busca em diferentes sites como 
       Nike e Adidas. Com soluções inteligentes, você encontra tênis de diversos estilos, 
@@ -65,13 +67,26 @@ const projectsData: IProject[] = [
   {
     title: 'MOMENTS-SOCCER',
     imageSrc: '/estadio-de-futebol.jpg',
-    year: '2023',
-    description: `Site para ver o resultados dos ultimos jogos dos jogos brasileiro e ver os melhores momentos
-      de toda rodada`,
-    overview:
-      'Site desenvolvido com intuido de treinamento e evoluido com o passar do tempo',
-    skills: ['Gerenciamento de API externa'],
-    technologies: ['ReactJs', 'TypeScript', 'Vite', 'Styled-Components'],
+    experience: 'Desenvolvedor Front-End',
+    year: '2022',
+    description: `Front-end desenvolvido para consumir diferentes APIs externas, agregando as 
+    informações de maneira eficiente. Gerenciamento de buscas e exibição organizada dos dados na 
+    interface, proporcionando uma experiência de usuário clara e intuitiva.`,
+    overview: `Front-end desenvolvido para consumir diferentes APIs externas, agregando as 
+    informações de maneira eficiente. Gerenciamento de buscas e exibição organizada dos dados na 
+    interface, proporcionando uma experiência de usuário clara e intuitiva.`,
+    skills: [
+      'Gerenciamento de APIs',
+      'Organização de Informações',
+      'Adaptabilidade',
+    ],
+    technologies: [
+      'ReactJs',
+      'TypeScript',
+      'Styled Components',
+      'Axios',
+      'Vite',
+    ],
     showcaseImage: '/best-moments-soccer.png',
     githubLink: 'https://github.com/ewerton11/sneakerhead-web',
   },

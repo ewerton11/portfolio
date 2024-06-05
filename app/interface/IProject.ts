@@ -1,6 +1,7 @@
 interface IProject {
   title: string
   imageSrc: string
+  experience: string
   year: string
   description: string
   overview: string
