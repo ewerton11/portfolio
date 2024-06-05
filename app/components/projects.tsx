@@ -26,7 +26,7 @@ const projectsData: IProject[] = [
       'Slick-carousel',
       'Axios',
     ],
-    showcaseImage: '/select-team.png',
+    showcaseImage: '/selectTeam.png',
     githubLink: 'https://github.com/ewerton11/sneakerhead-web',
   },
   {
