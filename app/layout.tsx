@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Roboto, Roboto_Mono, Architects_Daughter } from 'next/font/google'
-import './globals.css'
+import './styles/globals.css'
 
 const robotoMono = Roboto_Mono({
   subsets: ['latin'],

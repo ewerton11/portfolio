@@ -1,12 +1,12 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-import Header from '@/components/header'
-import pixels from '@/styles/pixels.module.css'
-import About from '@/components/about'
-import Contact from '@/components/contact'
-import Start from '@/components/start'
-import Projects from '@/components/projects'
+import Header from './components/header'
+import Start from './components/start'
+import Projects from './components/projects'
+import About from './components/about'
+import Contact from './components/contact'
+import Pixels from './styles/pixels.module.css'
 
 export default function Home() {
   const pixelContainerRef = useRef<HTMLDivElement | null>(null)
@@ -51,7 +51,7 @@ export default function Home() {
       {/*  */}
       <Header />
       <div
-        className={`${pixels.pixel} w-full h-auto flex flex-col relative overflow-hidden`}
+        className={`${Pixels.pixel} w-full h-auto flex flex-col relative overflow-hidden`}
         ref={pixelContainerRef}
       >
         <Start />

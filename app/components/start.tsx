@@ -1,4 +1,4 @@
-import start from '@/styles/start.module.css'
+import start from '../styles/start.module.css'
 
 const Start = () => {
   return (
