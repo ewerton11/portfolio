@@ -8,7 +8,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="flex flex-col w-[80%] lg:my-14">
       <div className="w-full flex flex-col items-center">
-        <div className="w-2/3 flex flex-col items-center">
+        <div className="w-10/12 lg:w-2/3 flex flex-col items-center">
           <div className="w-full h-[160px] lg:h-[360px] relative">
             <Image
               src={project.imageSrc}
@@ -30,15 +30,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-center my-32">
-        <div className="w-2/3">
+      <div className="w-full flex justify-center my-24 lg:my-32">
+        <div className="lg:w-2/3">
           <p className="font-robotoMono text-sm lg:text-xl text-offWhite">
             {project.description}
           </p>
         </div>
       </div>
       <div className="w-full flex flex-col items-end">
-        <div className="w-[83%] text-sm lg:text-xl font-robotoMono font-bold">
+        <div className="w-full lg:w-[83%] text-sm lg:text-xl font-robotoMono font-bold">
           <div className="w-full flex mb-14">
             <div className="w-1/2 h-full">
               <p>VISÃO GERAL DO PROJETO</p>
