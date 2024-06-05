@@ -1,4 +1,3 @@
-import Github from '@/public/GithubIcon'
 import Image from 'next/image'
 
 interface ProjectCardProps {

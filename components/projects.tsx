@@ -1,4 +1,4 @@
-import ProjectCard from '@/components/projectCard'
+import ProjectCard from './projectCard'
 
 const projectsData: IProject[] = [
   {
@@ -75,7 +75,6 @@ const projectsData: IProject[] = [
     showcaseImage: '/best-moments-soccer.png',
     githubLink: 'https://github.com/ewerton11/sneakerhead-web',
   },
-  // Adicione mais projetos aqui
 ]
 
 const Projects: React.FC = () => {
