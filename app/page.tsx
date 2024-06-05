@@ -6,7 +6,7 @@ import pixels from '@/styles/pixels.module.css'
 import About from '@/components/about'
 import Contact from '@/components/contact'
 import Start from '@/components/start'
-import Projects from '../components/projects'
+import Projects from '@/components/projects'
 
 export default function Home() {
   const pixelContainerRef = useRef<HTMLDivElement | null>(null)

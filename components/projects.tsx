@@ -1,4 +1,4 @@
-import ProjectCard from './projectCard'
+import ProjectCard from '@/components/projectCard'
 
 const projectsData: IProject[] = [
   {
@@ -77,7 +77,7 @@ const projectsData: IProject[] = [
   },
 ]
 
-const Projects: React.FC = () => {
+export default function Projects() {
   return (
     <div className="flex flex-col items-center min-h-screen" id="projects">
       {projectsData.map((project, index) => (
@@ -86,5 +86,3 @@ const Projects: React.FC = () => {
     </div>
   )
 }
-
-export default Projects

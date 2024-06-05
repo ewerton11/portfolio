@@ -4,7 +4,7 @@ interface ProjectCardProps {
   project: IProject
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="flex flex-col w-[80%] lg:my-14">
       <div className="w-full flex flex-col items-center">
@@ -110,5 +110,3 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     </div>
   )
 }
-
-export default ProjectCard
