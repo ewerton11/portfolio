@@ -6,7 +6,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="flex flex-col w-[80%] lg:my-14">
+    <div className="flex flex-col w-[90%] md:w-[88%] lg:my-14">
       <div className="w-full flex flex-col items-center">
         <div className="w-10/12 lg:w-2/3 flex flex-col items-center">
           <div className="w-full h-[160px] lg:h-[360px] relative">

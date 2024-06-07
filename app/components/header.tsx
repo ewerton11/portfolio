@@ -28,14 +28,14 @@ export default function Header() {
   return (
     <header className="w-full h-20 sticky top-0 z-50">
       <div className="relative w-full h-full">
-        <div className="absolute left-[10%] h-full flex items-center">
+        <div className="absolute left-[3%] md:left-[6%] h-full flex items-center">
           <h1 className="pb-2 text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-robotoMono font-bold">
             <Link href="#start">er.</Link>
           </h1>
         </div>
-        <div className="absolute right-[10%] h-full flex items-center">
+        <div className="absolute right-[3%] md:right-[6%] h-full flex items-center">
           <nav className="h-full">
-            <ul className="h-full flex items-center text-base md:text-xl font-roboto font-medium">
+            <ul className="h-full flex items-center text-base md:text-xl font-roboto font-semibold">
               <li className="p-2 md:p-3 hover:text-gray-200">
                 <Link href="#projects">Projeto</Link>
               </li>

@@ -14,3 +14,11 @@
     opacity: 1;
   }
 }
+
+.delay2 {
+  animation-delay: 3s;
+}
+
+.delay3 {
+  animation-delay: 3.5s;
+}

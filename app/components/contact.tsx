@@ -7,7 +7,7 @@ const Contact = () => {
       className="flex flex-col items-center min-h-screen h-screen"
       id="contact"
     >
-      <div className="w-[80%] h-full flex items-center">
+      <div className="w-[90%] md:w-[88%] h-full flex items-center">
         <div className="w-full h-2/5 sm:h-2/3 border rounded-3xl flex flex-col justify-center items-center">
           <div className="w-[80%] h-[80%] flex flex-col">
             <div className="w-full h-5/6 flex flex-col border-b font-robotoMono">
