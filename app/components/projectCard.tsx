@@ -32,13 +32,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       </div>
       <div className="w-full flex justify-center my-24 lg:my-32">
         <div className="lg:w-2/3">
-          <p className="font-robotoMono text-sm lg:text-xl text-offWhite">
+          <p className="font-robotoMono text-sm lg:text-xl text-gray-100">
             {project.description}
           </p>
         </div>
       </div>
       <div className="w-full flex flex-col items-end">
-        <div className="w-full lg:w-[83%] text-sm lg:text-xl font-robotoMono font-bold">
+        <div className="w-full lg:w-[83%] pb-16 text-sm lg:text-xl font-robotoMono font-bold">
           <div className="w-full flex mb-14">
             <div className="w-1/2 h-full">
               <p>VISÃO GERAL DO PROJETO</p>

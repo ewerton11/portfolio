@@ -2,7 +2,7 @@
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  animation: typewriter 1s steps(40, end) 1 normal both,
+  animation: typewriter 0.5s steps(40, end) 1 normal both,
     blink-caret 0.75s step-end infinite;
 }
 
@@ -16,9 +16,9 @@
 }
 
 .delay2 {
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 .delay3 {
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
