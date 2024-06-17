@@ -10,10 +10,10 @@ const Contact = () => {
       <div className="w-[90%] md:w-[88%] h-full flex items-center">
         <div className="w-full h-2/5 sm:h-2/3 border rounded-3xl flex flex-col justify-center items-center">
           <div className="w-[80%] h-[80%] flex flex-col">
-            <div className="w-full h-5/6 flex flex-col border-b font-robotoMono">
+            <div className="w-full h-5/6 flex flex-col border-b font-roboto">
               <h1 className="text-2xl sm:text-5xl font-normal">
-                Vamos criar <br />
-                algo incrível <br /> juntos.
+                Vamos criar algo <br />
+                incrível juntos.
               </h1>
               <div className="flex-1 flex justify-end items-center">
                 <div className="w-20 sm:w-24 mr-5">

@@ -8,8 +8,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="flex flex-col w-[90%] md:w-[88%] lg:my-14">
       <div className="w-full flex flex-col items-center">
-        <div className="w-10/12 lg:w-2/3 flex flex-col items-center">
-          <div className="w-full h-[160px] lg:h-[360px] relative">
+        <div className="w-10/12 lg:w-1/2 flex flex-col items-center">
+          <div className="w-full h-[160px] lg:h-[340px] relative">
             <Image
               src={project.imageSrc}
               width={512}
@@ -24,51 +24,53 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               {project.title}
             </p>
           </div>
-          <div className="w-full mt-7 flex justify-between font-robotoMono text-sm lg:text-xl">
-            <p className="w-3/4 lg:w-auto">{project.experience}</p>
+          <div className="w-full mt-5 flex justify-between font-roboto text-sm lg:text-xl text-gray-100">
+            <p className="w-3/4">{project.experience}</p>
             <p className="">{project.year}</p>
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-center my-24 lg:my-32">
-        <div className="lg:w-2/3">
-          <p className="font-robotoMono text-sm lg:text-xl text-gray-100">
+      <div className="w-full flex justify-center my-24 lg:my-16">
+        <div className="lg:w-1/2">
+          <p className="font-roboto text-sm lg:text-2xl text-gray-100">
             {project.description}
           </p>
         </div>
       </div>
       <div className="w-full flex flex-col items-end">
-        <div className="w-full lg:w-[83%] pb-16 text-sm lg:text-xl font-robotoMono font-bold">
-          <div className="w-full flex mb-14">
-            <div className="w-1/2 h-full">
-              <p>VISÃO GERAL DO PROJETO</p>
+        <div className="w-full lg:w-[75%] flex flex-col items-end pb-16 text-sm lg:text-xl font-roboto">
+          <div className="w-full flex py-14">
+            <div className="w-1/3 h-full font-bold">
+              <p>Visão Geral</p>
             </div>
-            <div className="w-1/2 h-full">
+            <div className="w-2/3 h-full text-gray-100">
               <p>{project.overview}</p>
             </div>
           </div>
-          <div className="w-full flex mb-14">
-            <div className="w-1/2 h-full">
-              <p>HABILIDADES TÉCNICAS</p>
+          <div className="w-2/3">
+            <div className="w-full flex py-10 border-b border-white">
+              <div className="w-1/2 h-full font-medium">
+                <p>HABILIDADES TÉCNICAS</p>
+              </div>
+              <div className="w-1/2 h-full">
+                <ul className="space-y-1">
+                  {project.skills.map((skill) => (
+                    <li key={skill}>{skill}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
-            <div className="w-1/2 h-full">
-              <ul className="space-y-1 list-disc list-inside">
-                {project.skills.map((skill) => (
-                  <li key={skill}>{skill}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          <div className="w-full flex">
-            <div className="w-1/2 h-full">
-              <p>TECNOLOGIAS</p>
-            </div>
-            <div className="w-1/2 h-full">
-              <ul className="space-y-1 list-disc list-inside">
-                {project.technologies.map((tech) => (
-                  <li key={tech}>{tech}</li>
-                ))}
-              </ul>
+            <div className="w-full flex pt-10">
+              <div className="w-1/2 h-full font-medium">
+                <p>TECNOLOGIAS</p>
+              </div>
+              <div className="w-1/2 h-full">
+                <ul className="space-y-1">
+                  {project.technologies.map((tech) => (
+                    <li key={tech}>{tech}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>

@@ -47,7 +47,7 @@ export default function Header() {
               </li>
             </ul>
           </nav>
-          <div className="w-7 sm:w-8 md:w-9 lg:w-10 h-full ml-2 sm:ml-1 cursor-pointer flex justify-center items-center">
+          <div className="w-7 md:w-8 h-full ml-2 sm:ml-4 cursor-pointer flex justify-center items-center">
             <DarkThemeIcon />
           </div>
         </div>

@@ -4,7 +4,7 @@ const projectsData: IProject[] = [
   {
     title: 'FUT-433',
     imageSrc: '/fantasy.jpg',
-    experience: 'Desenvolvedor Full-Stack',
+    experience: 'Desenvolvedor FullStack',
     year: 'Atual',
     description: `Plataforma de gerenciamento de times de fantasy football, onde os usuários podem
     selecionar jogadores, criar ligas, acompanhar estatísticas em tempo real e competir com outros 

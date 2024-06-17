@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="w-full h-screen flex justify-center" id="about">
       <div className="w-[90%] md:w-[88%] h-full flex flex-col justify-center relative">
-        <div className="w-full h-full flex flex-col lg:justify-center text-sm lg:text-xl font-robotoMono">
+        <div className="w-full h-full flex flex-col lg:justify-center text-sm lg:text-xl font-roboto">
           <div className="lg:hidden w-full flex justify-center">
             <div className="m-7 bg-white rounded-full flex justify-center item-center">
               <Image
@@ -16,8 +16,8 @@ const About = () => {
               />
             </div>
           </div>
-          <h1 className="text-offWhite mt-7">(SOBRE)</h1>
-          <div className="w-full h-auto flex items-center mt-7 lg:mt-3">
+          <h1 className="text-gray-100 mt-7">(SOBRE)</h1>
+          <div className="w-full h-auto flex items-center mt-7 lg:mt-0">
             <p className="flex-1">
               Me chamo Ewerton e sou desenvolvedor fullstack. Atualmente, tenho
               21 anos e moro no Rio de Janeiro, Brasil. Sempre fui apaixonado
@@ -46,8 +46,8 @@ const About = () => {
           </div>
           <div className="w-full flex justify-end">
             <div className="w-64 flex justify-center mt-16 lg:mt-10">
-              <p className="text-base text-center text-offWhite">
-                DESENVOLVEDOR FULLSTACK
+              <p className="text-base text-center text-gray-100">
+                DESENVOLVEDOR FULL-STACK
               </p>
             </div>
           </div>
