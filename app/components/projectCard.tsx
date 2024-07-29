@@ -75,17 +75,18 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </div>
         </div>
       </div>
-      <div className="w-full h-screen flex justify-center items-center">
-        <div className="w-full overflow-hidden">
-          <Image
-            src={project.showcaseImage}
-            width={1065}
-            height={520}
-            alt={`project ${project.title}`}
-            className="w-full h-full object-cover"
-          />
-        </div>
-        {/* <div className="flex-1 flex items-center p-2 sm:ml-10">
+      {project.showcaseImage && (
+        <div className="w-full h-screen flex justify-center items-center">
+          <div className="w-full overflow-hidden">
+            <Image
+              src={project.showcaseImage}
+              width={1065}
+              height={520}
+              alt={`project ${project.title}`}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          {/* <div className="flex-1 flex items-center p-2 sm:ml-10">
             <button
               className="w-24 sm:w-36 flex justify-between items-center border
              border-gray-400 rounded-lg px-2"
@@ -108,7 +109,28 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               </div>
             </button>
           </div> */}
-      </div>
+        </div>
+      )}
+      {project.mobileImage && (
+        <div className="w-full h-screen flex flex-col sm:flex-row justify-center items-center">
+          {project.mobileImage.map((img, index) => {
+            return (
+              <div
+                className="w-auto h-[90%] py-4 sm:py-0 px-8 overflow-hidden"
+                key={index}
+              >
+                <Image
+                  src={img}
+                  width={550}
+                  height={520}
+                  alt={`project ${project.title}`}
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            )
+          })}
+        </div>
+      )}
     </div>
   )
 }

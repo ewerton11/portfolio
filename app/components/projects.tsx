@@ -2,7 +2,33 @@ import ProjectCard from './projectCard'
 
 const projectsData: IProject[] = [
   {
-    title: 'FUT-433',
+    title: 'SMART-RUN',
+    imageSrc: '/braden.jpg',
+    experience: 'Desenvolvedor FullStack',
+    year: 'Atual',
+    description: `Aplicativo de monitoramento de corridas, onde os usuários podem registrar suas 
+    corridas, receber treinos personalizados, acompanhar seu progresso em tempo real e melhorar 
+    seu desempenho de forma contínua.`,
+    overview: `Aplicativo desenvolvido com boas práticas de desenvolvimento, utilizando TDD, DDD, .NET 
+    com Clean Architecture e o padrão de Injeção de Dependência.`,
+    skills: ['DDD', 'Clean Architecture', 'TDD', 'IoC'],
+    technologies: [
+      '.Net Core',
+      'Asp.Net Core',
+      'EF Core',
+      'SQLServer',
+      'xUnit ',
+      'React Native',
+      'TypeScript',
+      'TailwindCSS',
+      'Axios',
+    ],
+    showcaseImage: null,
+    mobileImage: ['/iPhone-Home.png', '/iPhone-Plan.png', '/iPhone-Run.png'],
+    githubLink: 'https://github.com/ewerton11/sneakerhead-web',
+  },
+  {
+    title: 'FUT433',
     imageSrc: '/fantasy.jpg',
     experience: 'Desenvolvedor FullStack',
     year: 'Atual',
@@ -28,10 +54,11 @@ const projectsData: IProject[] = [
       'Axios',
     ],
     showcaseImage: '/selectTeam.png',
+    mobileImage: null,
     githubLink: 'https://github.com/ewerton11/sneakerhead-web',
   },
   {
-    title: 'SNEAKER-HEAD',
+    title: 'SNEAKERHEAD',
     imageSrc: '/sneaker.jpg',
     experience: 'Desenvolvedor Full-Stack',
     year: '2023',
@@ -62,6 +89,7 @@ const projectsData: IProject[] = [
       'Docker',
     ],
     showcaseImage: '/projectSneakerhead.png',
+    mobileImage: null,
     githubLink: 'https://github.com/ewerton11/sneakerhead-web',
   },
   {
@@ -87,6 +115,7 @@ const projectsData: IProject[] = [
       'Vite',
     ],
     showcaseImage: '/best-moments-soccer.png',
+    mobileImage: null,
     githubLink: 'https://github.com/ewerton11/sneakerhead-web',
   },
 ]

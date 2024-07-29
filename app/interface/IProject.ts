@@ -7,6 +7,7 @@ interface IProject {
   overview: string
   skills: string[]
   technologies: string[]
-  showcaseImage: string
+  showcaseImage: string | null
+  mobileImage: string[] | null
   githubLink: string
 }

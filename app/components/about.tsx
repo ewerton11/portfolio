@@ -20,7 +20,7 @@ const About = () => {
           <div className="w-full h-auto flex items-center mt-7 lg:mt-0">
             <p className="flex-1">
               Me chamo Ewerton e sou desenvolvedor fullstack. Atualmente, tenho
-              21 anos e moro no Rio de Janeiro, Brasil. Sempre fui apaixonado
+              22 anos e moro no Rio de Janeiro, Brasil. Sempre fui apaixonado
               por tecnologias e sou curioso. Foi assim que conheci a área de
               programação.
               <br />
@@ -28,9 +28,6 @@ const About = () => {
               anos, comecei a me aperfeiçoar com projetos e freelances. Hoje,
               sigo nesse modelo, trabalhando como freelancer, ajudando pessoas e
               me desenvolvendo cada vez mais.
-              <br />
-              Meu objetivo é criar minha própria startup, combinando minha
-              paixão por tecnologia com meu espírito empreendedor.
             </p>
             <div className="hidden lg:block lg:w-auto">
               <div className="bg-white rounded-full flex justify-center item-center">
