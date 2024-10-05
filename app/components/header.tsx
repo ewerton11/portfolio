@@ -1,55 +1,39 @@
 import Link from 'next/link'
-import DarkThemeIcon from '@/public/DarkThemeIcon'
-import { useEffect } from 'react'
+import Image from 'next/image'
+import { useRouter } from 'next/navigation'
+
+import Menu from './navbar'
+import Navbar from './navbar'
 
 export default function Header() {
-  useEffect(() => {
-    const handleSmoothScroll = (e: any) => {
-      const targetId = e.target.getAttribute('href').substring(1)
-      const targetElement = document.getElementById(targetId)
-      if (targetElement) {
-        e.preventDefault()
-        targetElement.scrollIntoView({ behavior: 'smooth' })
-      }
-    }
+  const router = useRouter()
 
-    const links = document.querySelectorAll('a[href^="#"]')
-    links.forEach((link) => {
-      link.addEventListener('click', handleSmoothScroll)
-    })
-
-    return () => {
-      links.forEach((link) => {
-        link.removeEventListener('click', handleSmoothScroll)
-      })
-    }
-  }, [])
+  const handleRedirect = () => {
+    router.push('/')
+  }
 
   return (
-    <header className="w-full h-20 sticky top-0 z-50">
+    <header className="w-full h-20 absolute top-0 sm:top-10 md:top-20 z-50">
       <div className="relative w-full h-full">
         <div className="absolute left-[3%] md:left-[6%] h-full flex items-center">
-          <h1 className="pb-2 text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-robotoMono font-bold">
-            <Link href="#start">er.</Link>
+          <h1
+            onClick={handleRedirect}
+            className="pb-2 text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-robotoMono font-bold cursor-pointer"
+          >
+            er.
           </h1>
         </div>
         <div className="absolute right-[3%] md:right-[6%] h-full flex items-center">
-          <nav className="h-full">
-            <ul className="h-full flex items-center text-base md:text-xl font-roboto font-semibold">
-              <li className="p-2 md:p-3 hover:text-gray-200">
-                <Link href="#projects">Projeto</Link>
-              </li>
-              <li className="p-2 md:p-3 hover:text-gray-200">
-                <Link href="#about">Sobre</Link>
-              </li>
-              <li className="p-2 md:p-3 hover:text-gray-200">
-                <Link href="#contact">Contato</Link>
-              </li>
-            </ul>
-          </nav>
-          <div className="w-7 md:w-8 h-full ml-2 sm:ml-4 cursor-pointer flex justify-center items-center">
-            <DarkThemeIcon />
+          <div className="w-5 sm:w-6 mr-7 md:mr-10 cursor-pointer flex justify-center items-center">
+            <Image
+              src="/modo-claro.png"
+              width={26}
+              height={26}
+              alt="modo claro"
+              className="w-full h-full object-cover filter brightness-50"
+            />
           </div>
+          <Navbar />
         </div>
       </div>
     </header>
