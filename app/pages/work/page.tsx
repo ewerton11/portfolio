@@ -16,8 +16,8 @@ export default function Works() {
     <div className="w-full flex flex-col relative bg-primary-dark items-center min-h-screen">
       <Header />
       <div className="w-full flex flex-1 relative">
-        <div className="font-roboto absolute bottom-0 right-[6%] w-2/5 h-4/5 flex flex-col justify-center">
-          <h1 className="text-6xl pb-10 mb-10 border-b border-white">
+        <div className="absolute bottom-0 right-[6%] w-2/5 h-4/5 flex flex-col justify-center">
+          <h1 className="font-roboto text-6xl pb-10 mb-10 border-b border-white">
             Projetos
           </h1>
           <div className="w-full">
