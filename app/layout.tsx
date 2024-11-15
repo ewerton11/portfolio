@@ -28,7 +28,7 @@ const architectsDaughter = Architects_Daughter({
 })
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
+  title: 'Ewerton Reis',
   description: 'Portfolio of a full stack developer',
 }
 
