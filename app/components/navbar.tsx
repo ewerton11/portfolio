@@ -9,21 +9,24 @@ const Navbar = () => {
 
   return (
     <div
-      className="w-10 h-5 flex flex-col items-start justify-between cursor-pointer"
+      className="w-9 h-7 flex flex-col items-center justify-between cursor-pointer space-y-2"
       onClick={toggleMenu}
     >
+      {/* Barra superior */}
       <div
-        className={`w-10 h-1 bg-white rounded transition-transform duration-300 transform ${
+        className={`w-full h-1 bg-white rounded transition-transform duration-300 transform ${
           isOpen ? 'rotate-45 translate-y-2' : ''
         }`}
       ></div>
+      {/* Barra do meio */}
       <div
-        className={`w-10 h-1 bg-white rounded transition-opacity duration-300 ${
+        className={`w-full h-1 bg-white rounded transition-opacity duration-300 ${
           isOpen ? 'opacity-0' : ''
         }`}
       ></div>
+      {/* Barra inferior */}
       <div
-        className={`w-10 h-1 bg-white rounded transition-transform duration-300 transform ${
+        className={`w-full h-1 bg-white rounded transition-transform duration-300 transform ${
           isOpen ? '-rotate-45 -translate-y-2' : ''
         }`}
       ></div>

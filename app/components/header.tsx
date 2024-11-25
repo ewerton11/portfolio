@@ -24,13 +24,13 @@ export default function Header() {
           </h1>
         </div>
         <div className="absolute right-[3%] md:right-[6%] h-full flex items-center">
-          <div className="w-5 sm:w-6 mr-7 md:mr-10 cursor-pointer flex justify-center items-center">
+          <div className="w-5 sm:w-7 mr-7 md:mr-10 cursor-pointer flex justify-center items-center">
             <Image
               src="/modo-claro.png"
-              width={26}
-              height={26}
+              width={32}
+              height={32}
               alt="modo claro"
-              className="w-full h-full object-cover filter brightness-50"
+              className="w-full h-full object-cover"
             />
           </div>
           <Navbar />
