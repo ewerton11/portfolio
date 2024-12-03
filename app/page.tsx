@@ -1,51 +1,13 @@
 'use client'
 
 import Image from 'next/image'
-import { useEffect, useRef } from 'react'
+import Link from 'next/link'
 
 import Header from './components/header'
 import start from './styles/start.module.css'
 import writer from './styles/typingAnimation.module.css'
-import Link from 'next/link'
 
 export default function Home() {
-  // const pixelContainerRef = useRef<HTMLDivElement | null>(null)
-
-  // useEffect(() => {
-  //   const pixelContainer = pixelContainerRef.current
-  //   if (!pixelContainer) return
-
-  //   const numberOfPixels: number = 100
-
-  //   for (let i = 0; i < numberOfPixels; i++) {
-  //     const pixel = document.createElement('span')
-  //     const pixelSize = Math.floor(Math.random() * 5) + 1
-
-  //     Object.assign(pixel.style, {
-  //       left: `${Math.random() * 100}vw`,
-  //       top: `${Math.random() * 100}vh`,
-  //       width: `${pixelSize}px`,
-  //       height: `${pixelSize}px`,
-  //     })
-
-  //     if (Math.random() < 0.3) {
-  //       // 0.5 para 50% de chance de adicionar animação
-  //       const directionX = Math.random() > 0.5 ? 100 : -100
-  //       const directionY = Math.random() > 0.5 ? 100 : -100
-
-  //       Object.assign(pixel.style, {
-  //         animationDuration: `${Math.random() * 120 + 120}s`,
-  //         animationDelay: `${Math.random() * 60}s`,
-  //       })
-
-  //       pixel.style.setProperty('--x-pixels', `${directionX}vw`)
-  //       pixel.style.setProperty('--y-pixels', `${directionY}vh`)
-  //     }
-
-  //     pixelContainer.appendChild(pixel)
-  //   }
-  // }, [])
-
   return (
     <div className="w-full relative bg-primary-dark">
       <Header />
@@ -92,9 +54,11 @@ export default function Home() {
                   className="w-full h-full object-cover filter brightness-50"
                 />
               </div>
-              <p className="text-sm sm:text-base lg:text-xl font-robotoMono font-medium cursor-pointer">
-                Saiba mais
-              </p>
+              <Link href="pages/about">
+                <p className="text-sm sm:text-base lg:text-xl font-robotoMono font-medium cursor-pointer">
+                  Saiba mais
+                </p>
+              </Link>
             </div>
           </div>
           <div className="w-full h-1/2 flex flex-col justify-center">
